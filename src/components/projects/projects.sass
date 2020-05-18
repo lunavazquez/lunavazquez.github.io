@@ -17,51 +17,71 @@
     overflow: hidden
     text-align: center
     display: flex
-    justify-content: center
+    justify-content: space-around
     flex-wrap: wrap
     margin: 0 auto
     width: 80%
-    .project
-      border: 1px solid $gray
-      border-radius: 400px
-      height: 250px
-      margin: 0 6.5%
-      overflow: hidden
-      text-align: center
-      width: 250px
-      font-size: 2rem
-      line-height: 250px
-      font-family: $fontRighteous
-      color: transparent
-      @include boxShadow()
-      @include transitionEaseOut($moderateSpeed)
-      &.pokedex
-        background: url('https://raw.githubusercontent.com/lunavazquez/pokemon-images/master/pokegif.gif')
-        background-position-y: center
-        background-position-x: center
-        background-repeat: no-repeat
-        background-size: cover
-      &.login
-        background: url('https://raw.githubusercontent.com/lunavazquez/pokemon-images/master/login.gif')
-        background-position-y: center
-        background-position-x: center
-        background-repeat: no-repeat
-        background-size: cover
-      &.movies
-        background: url('https://raw.githubusercontent.com/lunavazquez/pokemon-images/master/movies.gif')
-        background-position-y: center
-        background-position-x: center
-        background-repeat: no-repeat
-        background-size: cover
-      &:hover
-        background: $black
-        color: $gray
-        background-position-y: center
-        background-position-x: center
-        background-repeat: no-repeat
-        background-size: cover
+    .project123
+      .content-project
+        border: 1px solid $gray
+        border-radius: 400px
+        height: 250px
+        margin: 0 6.5%
+        overflow: hidden
+        text-align: center
+        width: 250px
+        font-size: 2rem
+        line-height: 250px
+        font-family: $fontRighteous
+        color: transparent
+        @include boxShadow()
+        @include transitionEaseOut($moderateSpeed)
+        .project
+          &.pokedex
+            background: url('https://raw.githubusercontent.com/lunavazquez/pokemon-images/master/pokegif.gif')
+            background-position-y: center
+            background-position-x: center
+            background-repeat: no-repeat
+            background-size: cover
+            display: block
+          &.login
+            background: url('https://raw.githubusercontent.com/lunavazquez/pokemon-images/master/login.gif')
+            background-position-y: center
+            background-position-x: center
+            background-repeat: no-repeat
+            background-size: cover
+            display: block
+          &.movies
+            background: url('https://raw.githubusercontent.com/lunavazquez/pokemon-images/master/movies.gif')
+            background-position-y: center
+            background-position-x: center
+            background-repeat: no-repeat
+            background-size: cover
+            display: block
+          &:hover
+            background: $black
+            color: $gray
+            background-position-y: center
+            background-position-x: center
+            background-repeat: no-repeat
+            background-size: cover
+            display: block
     .git-repo
-      width: 33%
+      width: 31%
       color: $pink
       text-decoration: underline
       font-family: $fontPoppins
+
+  // PANTALLA TABLET HORIZONTAL- MEDIUM md 
+@media (max-width: 1199px) and (min-width: 992px)
+  .projects
+    .project-container
+      height: 100vh
+
+  // PANTALLA PHONE - EXTRA SMALL xs
+@media (max-width: 768px)
+  .projects
+    .project-container
+      height: 150vh
+      // margin-bottom: 0
+      // margin-top: 18em

@@ -8,8 +8,7 @@
     width: 100%
     font-family: $fontPoppins
     color: $pink
-    font-size: 2rem 
-
+    font-size: 2rem
 
   .container-skills
     display: flex
@@ -51,15 +50,25 @@
       .skillpercentage
         font-family: $fontComfortaa
       .progress-bar
-        @include boxShadow()
         background: #efefef
         border-radius: 30px
         display: block
         height: 10px
         overflow: hidden
         width: 100%
+        @include boxShadow()
         span
-          @include degrade()
           border-radius: 30px
           display: block
           height: 100%
+          @include degrade()
+
+// PANTALLA PHONE - EXTRA SMALL xs
+@media (max-width: 768px)
+  .skills
+    .container-skills
+      .skill
+        width: 100%
+    .section-title
+      margin-top: 180px
+      text-align: center

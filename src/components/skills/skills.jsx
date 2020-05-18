@@ -43,9 +43,9 @@ const skillsData = [
   },
   {
     id: 6,
-    icon: '',
-    name: 'Redux',
-    percentage: '20%',
+    icon: 'fab fa-sass',
+    name: 'Sass',
+    percentage: '50%',
   },
   {
     id: 7,

@@ -9,13 +9,42 @@
     height: 50%
     width: 30%
     img
-      @include boxShadow()
       height: 100%
+      width: 100%
+      @include boxShadow()
   .bio-container
     width: 50%
     text-align: justify
     font-family: $fontPoppins
     .section-title
-     font-size: 2rem 
-     color: $pink
-     
+      font-size: 2rem
+      color: $pink
+
+// PANTALLA TABLET HORIZONTAL- MEDIUM md 
+@media (max-width: 1199px) and (min-width: 992px)
+  .about
+    .bio-container
+      width: 100%
+    .img-container
+      width: 100%
+      img
+        width: 90%
+        // width: 50%
+
+@media (max-width: 768px)
+  .about
+    width: 100%
+    display: inline-block
+    .img-container
+      width: 100%
+      text-align: center
+      img
+        width: 50%
+    .bio-container
+      width: 100%
+      p
+        margin: 40px
+        font-size: 18px
+      .section-title
+        text-align: center
+        margin: 20px

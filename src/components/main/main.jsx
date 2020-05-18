@@ -27,7 +27,7 @@ export default () => {
             </a>
           </li>
           <li>
-            <a href="https://drive.google.com/open?id=1RELgRarfD8j9Y63AjCbDdeSabEaav9iz">
+            <a href="https://drive.google.com/open?id=1dF5iL-gBkk7pIqyhbALggeY2WAsbTBjx">
               <span className="far fa-file-pdf" />
               <span>CV</span>
             </a>

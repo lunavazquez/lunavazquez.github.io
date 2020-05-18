@@ -27,19 +27,26 @@ export default () => {
     <div className="section projects">
       <h1 className="section-title">Proyectos</h1>
       <div className="project-container">
-        {projects.map(({ id, link, name }) => {
+        {projects.map(({ id, link, name, repositorio }) => {
           console.log(name + ' project');
           return (
-            <a key={id} href={link} className={name + ' project'}>
-              {name}
-            </a>
+            <div className="project123">
+              <div className="content-project">
+                <a key={id} href={link} className={name + ' project'}>
+                  {name}
+                </a>
+              </div>
+              <a key={repositorio} className="git-repo" href={repositorio}>
+                @github/{name}
+              </a>
+            </div>
           );
         })}
-        {projects.map(({ repositorio, name }) => (
+        {/* {projects.map(({ repositorio, name }) => (
           <a key={repositorio} className="git-repo" href={repositorio}>
             @github/{name}
           </a>
-        ))}
+        ))} */}
       </div>
     </div>
   );
