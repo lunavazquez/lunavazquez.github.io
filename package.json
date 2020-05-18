@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "hhttps://lunavazquez.github.io/portafolio/",
+  "homepage": "https://lunavazquez.github.io/portafolio/",
   "dependencies": {
     "@babel/core": "7.1.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
